@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="nav-links">
+            <a class="active" href="#">Home</a>
+            <a href="./favorites.html">Favorites</a>
+          </div>
+          <div class="nav-login">
+            <a href="#"
+              >Have an account? <span>Login</span>
+              <div class="notification"></div
+            ></a>
+          </div>
+        </nav>
+      </header>
+      <section class="main">
+        <h1>The path to your next good read starts here</h1>
+        <div class="book-container">
+          <div class="book--input">
+            <form>
+              <p>Feel free to search for specific authors!</p>
+              <label for="filter">I am a big fan of</label>
+              <input
+                id="filter"
+                type="text"
+                name="filter"
+                placeholder="author name..."
+              />.
+            </form>
+          </div>
+          <ul class="book-cards">
+            <li class="loader"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
